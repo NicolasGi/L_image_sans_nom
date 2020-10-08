@@ -1,0 +1,123 @@
+.main__book {
+  margin-top: $heightMenu;
+}
+
+.not-for-mobile {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+.main-gallery {
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+  .flickity-button {
+    background: transparent;
+  }
+  /* big previous & next buttons */
+  .flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+  /* hide disabled button */
+  .flickity-button:disabled {
+    display: none;
+  }
+  .gallery-cell {
+    width: 100%;
+    margin-right: 1rem;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* half-width cells for larger devices */
+  .gallery-cell {
+    width: 50%;
+  }
+  .not-for-mobile {
+    max-width: 967px;
+    width: 75vw;
+    height: auto;
+
+    clip: auto;
+
+    grid-column: 1/span 4;
+    grid-row: auto;
+
+    display: flex;
+    justify-content: space-between;
+     img{
+      width: 130px;
+      height: auto;
+    }
+    a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .book__filing__card {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content auto 1fr; // faire une minmax :thinking:
+    grid-gap: 10px;
+
+    .book__filing__title {
+      grid-column: 8/13;
+      grid-row: 1;
+      //text-align: right;
+
+    }
+    .img {
+      grid-column: 2/8;
+      grid-row: 2;
+    }
+    .book__filing__txt {
+      margin-top: 0;
+      grid-row: 2;
+      grid-column: 8/span 5;
+    }
+    .btn-a {
+      grid-row: 2;
+      grid-column: span 3/12;
+      height: max-content;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .book__filing__show {
+      cursor: pointer;
+      grid-row: 2;
+      grid-column: 8/13;
+      margin-top: auto;
+      padding: 10px;
+      //margin-bottom: 273px; //find a good 'px' to % or change grid-template
+      img {
+        width: 150px;
+        transition: width 0.3s ease-in-out;
+
+        &:hover {
+          width: 180px;
+          transition: width 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .book__filing__name__artist {
+    color: white;
+  }
+
+}
+

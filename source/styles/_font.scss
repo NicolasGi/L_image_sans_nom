@@ -1,0 +1,20 @@
+@font-face {
+  font-family:'Novecento';
+  //http://localhost/isn_wordpress/
+  //http://www.isn.nicolas-gilson.site
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('http://www.isn.nicolas-gilson.site/wp-content/themes/isn/assets/font/novecento/Novecentowide-Bold.eot?#iefix') format('embedded-opentype'),
+  url("http://www.isn.nicolas-gilson.site/wp-content/themes/isn/assets/font/novecento/Novecentowide-Bold.otf") format('opentype'),
+  url("http://www.isn.nicolas-gilson.site/wp-content/themes/isn/assets/font/novecento/Novecentowide-Bold.ttf") format('truetype'),
+  url("http://www.isn.nicolas-gilson.site/wp-content/themes/isn/assets/font/novecento/Novecentowide-Bold.woff") format('woff'),
+  url("http://www.isn.nicolas-gilson.site/wp-content/themes/isn/assets/font/novecento/Novecentowide-Bold.woff2") format('woff2');
+  //src: url('./assets/font/novecento/Novecentowide-Bold.eot'); /* IE9 Compat Modes */
+
+}
+/*@font-face {
+  font-family: "Lexend";
+  src: url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+}*/
